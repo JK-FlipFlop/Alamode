@@ -58,16 +58,16 @@ body
   height: 100%;
   display: block;
   object-fit: cover;
-  /*filter: grayscale(100%) brightness(40%);*/
+  filter: grayscale(100%) brightness(40%);
   border-radius: 2px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-  /*transition: filer .2s;*/
+  transition: filer .2s;
 }
 
-/*.thumbnail img:hover{
+.thumbnail img:hover{
   filter: grayscale(0%) brightness(100%);
   transition: filter .2s;
-}*/
+}
 
 .outro{
   text-align: center;
@@ -124,7 +124,7 @@ body
   }
 }
 
-@media screen and (max-width: 768px){
+/*@media screen and (max-width: 768px){
   .masonry-container{
     display: block;
     padding: 50px 0 0 0;
@@ -148,4 +148,4 @@ body
     background-size: cover;
     background-position-x: -230px;
   }
-}
+}*/
