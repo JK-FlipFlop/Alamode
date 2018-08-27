@@ -1,12 +1,14 @@
 body
 {
   overflow-x: hidden;
-  
 }
 
-.logo{
+.logo{  
+  padding: 6%;
+  background-image: url("./intro/alm_logo.svg");
+  background-repeat: no-repeat;
+  margin-left: 43%; 
   text-align: center;
-  padding: 30px;
 }
 
 .intro{
@@ -16,8 +18,66 @@ body
   background-position: center;
   background-attachment: fixed;
   min-height: 700px;
-  /*position: relative;*/
+}
 
+.container
+{
+  color: #fff;
+  padding-top: 3%;
+}
+
+.container h1{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 60px;
+
+}
+
+.container .p1{
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  font-size: 30px;
+}
+
+.container .p2
+{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 30px;
+}
+
+.container .p2 a button{
+  font-family: 'Fredericka the Great', cursive;
+  margin-top: 15px; 
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.container .p2 a button{
+  background: none;
+  color: #fff;
+  width: 245px;
+  height: 55px;
+  border: 1px solid rgb(230, 131, 50);
+  font-size: 18px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.container .p2 a button:focus{
+  outline: none
+}
+
+.container .p2 a button:hover{
+  background: rgb(230, 131, 50);
+  cursor: pointer;
+}
+
+.container .down_arrow{
+  margin-top: 18%;
+  margin-right: 90%;
+  font-size: 25px;
 }
 
 .masonry-container{
@@ -87,22 +147,203 @@ body
   min-height: 600px;
 }
 
-.outro .inner-content
+.outro h1
 {
-  padding-top: 250px;
+  padding-top: 10%;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 50px;
 }
 
-.outro .btn{
+.outro a button{
+  font-family: 'Fredericka the Great', cursive;
+  margin-top: 20px; 
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.outro a button{
+  background: none;
+  color: #fff;
+  width: 245px;
+  height: 55px;
+  border: 1px solid rgb(230, 131, 50);
+  font-size: 18px;
+  transition: .6s;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.outro a button:focus{
+  outline: none
+}
+
+.outro a button:hover{
+  background: rgb(230, 131, 50);
+  cursor: pointer;
+}
+
+/* Mobile Styles: Portrait */
+@media screen and (max-width: 600px) and (orientation: Portrait){
+  
+  .logo{  
+    padding-top: 6%;
+    background-image: url("./intro/alm_logo.svg");
+    background-repeat: no-repeat;
+    margin-left: 27%; 
+    width: 180px;
+    height: 180px;
+  }
+  
+  .masonry-container{
+    display: block;
+    padding: 50px 0 0 0;
+    width: 90%;
+  }
+
+  .container h1{
+    font-size: 50px;
+  }
+
+  .container .p1{
+    font-size: 25px;
+  }
+
+  .container .p2
+{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 20px;
+}
+
+.container .p2 a button{
+  font-family: 'Fredericka the Great', cursive;
   margin-top: 15px; 
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
+.container .p2 a button{
+  background: rgb(230, 131, 50);
+  color: #fff;
+  width: 225px;
+  height: 45px;
+  border: 1px solid rgb(158, 77, 11);
+  font-size: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+}
 
+.container .p2 a button:focus{
+  outline: none
+}
 
-@media screen and (max-width: 575.98px){
-  .masonry-container{
-    display: block;
-    padding: 50px 0 0 0;
-    width: 90%;
+.container .down_arrow{
+  margin-top: 58%;
+  margin-right: 3%;
+  font-size: 25px;
+}
+
+  .intro{
+    background-image: url("./intro/intro.jpeg");
+    background-size: cover;
+    background-position-x: 28%;
+  }
+
+  .thumbnail img{
+    margin-bottom: 2px;
+    filter: grayscale(0%) brightness(100%);
+    box-shadow: none;
+  }
+
+  .outro{ 
+    background-image: url("./intro/pexels-photo-1328998.jpeg");
+    background-size: cover;
+    background-position-x: 40%;
+  }
+
+  .outro h1
+{
+  padding-top: 50%;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 40px;
+}
+
+.outro a button{
+  font-family: 'Fredericka the Great', cursive;
+  margin-top: 10%; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.outro a button{
+  background: rgb(230, 131, 50);
+  color: #fff;
+  width: 225px;
+  height: 45px;
+  border: 1px solid rgb(158, 77, 11);
+  font-size: 18px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.outro a button:focus{
+  outline: none
+}
+
+}
+
+/* Mobile Styles: Landscape */
+@media screen and (max-width: 600px) and (orientation: Landscape){
+  
+  .logo{  
+    padding-top: 6%;
+    background-image: url("./intro/alm_logo.svg");
+    background-repeat: no-repeat;
+    margin-left: 38%; 
+    width: 150px;
+    height: 180px;
+  }
+  
+  .container{
+    margin-top: -50px;
+  }
+
+  .container h1{
+    font-size: 40px;
+  }
+
+  .container .p1{
+    font-size: 20px;
+  }
+
+  .container .p2 a button{
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: 15px; 
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .container .p2 a button{
+    background: rgb(230, 131, 50);
+    color: #fff;
+    width: 245px;
+    height: 40px;
+    border: 1px solid rgb(158, 77, 11);
+    font-size: 14px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .container .p2 a button:focus{
+    outline: none
   }
 
   .intro{
@@ -117,24 +358,107 @@ body
     box-shadow: none;
   }
 
-  .outro{
+  .outro{ 
     background-image: url("./intro/pexels-photo-1328998.jpeg");
     background-size: cover;
-    background-position-x: -230px;
+    background-position-x: 40%;
   }
+
+  .outro h1
+{
+  padding-top: 40%;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 35px;
 }
 
-@media screen and (max-width: 768px){
-  .masonry-container{
-    display: block;
-    padding: 50px 0 0 0;
-    width: 90%;
+.outro a button{
+  font-family: 'Fredericka the Great', cursive;
+  margin-top: 10%;
+  font-size: 14px; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.outro a button{
+  background: rgb(230, 131, 50);
+  color: #fff;
+  width: 245px;
+  height: 55px;
+  border: 1px solid rgb(158, 77, 11);
+  font-size: 18px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.outro a button:focus{
+  outline: none
+}
+}
+
+/* Mobile Style: Custom */
+@media screen and (min-width: 640px) and (max-width: 768px) and (orientation: Landscape){
+  
+  .logo{  
+    padding-top: 6%;
+    background-image: url("./intro/alm_logo.svg");
+    background-repeat: no-repeat;
+    margin-left: 38%; 
+    width: 150px;
+    height: 180px;
+  }
+  
+  .container{
+    margin-top: -50px;
+  }
+
+  .container h1{
+    margin-top: -10px;
+    font-size: 40px;
+  }
+
+  .container .p1{
+    margin-top: -10px;
+    font-size: 20px;
+  }
+  
+  .container .p2 a button{
+    font-family: 'Fredericka the Great', cursive; 
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .container .p2 a button{
+    background: rgb(230, 131, 50);
+    color: #fff;
+    width: 195px;
+    height: 40px;
+    border: 1px solid rgb(158, 77, 11);
+    font-size: 15px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+  }
+  
+  .container .p2 a button:focus{
+    outline: none
+  }
+
+  .container .down_arrow{
+    margin-top: 11%;
+    margin-left: 45%;
+    font-size: 25px;
   }
 
   .intro{
     background-image: url("./intro/intro.jpeg");
     background-size: cover;
     background-position-x: 28%;
+    min-height: 400px;
   }
 
   .thumbnail img{
@@ -143,9 +467,312 @@ body
     box-shadow: none;
   }
 
+  .outro{ 
+    background-image: url("./intro/pexels-photo-1328998.jpeg");
+    background-size: cover;
+    background-position-x: 40%;
+    min-height: 400px;
+  }
+  
+  .outro .dark-overlay
+  {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .outro h1
+{
+  padding-top: 35%;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 35px;
+}
+
+.outro a button{
+  font-family: 'Fredericka the Great', cursive;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.outro a button{
+  background: rgb(230, 131, 50);
+  color: #fff;
+  width: 195px;
+  height: 40px;
+  border: 1px solid rgb(158, 77, 11);
+  font-size: 15px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.outro a button:focus{
+  outline: none
+}
+}
+
+/* Tablets Style: Portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  .logo{  
+    padding-top: 30%;
+    background-image: url("./intro/alm_logo.svg");
+    background-repeat: no-repeat;
+    margin-left: 35%; 
+    width: 300px;
+    height: 180px;
+  }
+
+  .container{
+    margin-top: -30px;
+  }
+
+  .intro{
+    background-image: url("./intro/intro.jpeg");
+    background-size: cover;
+    background-position-x: 28%;
+    background-position-y: -100px;
+    min-height: 900px;
+  }
+
+  .container h1{
+    font-size: 75px;
+  }
+
+  .container .p1{
+    font-size: 35px;
+  }
+  
+  .container .p2 a button{
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: 15px; 
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .container .p2 a button{
+    background: rgb(230, 131, 50);
+    color: #fff;
+    width: 305px;
+    height: 55px;
+    border: 1px solid rgb(158, 77, 11);
+    font-size: 23px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+  }
+  
+  .container .p2 a button:focus{
+    outline: none
+  }
+
+  .container .down_arrow{
+    margin-left: 45%;
+    margin-top: 30%;
+  }
+
   .outro{
     background-image: url("./intro/pexels-photo-1328998.jpeg");
     background-size: cover;
-    background-position-x: -230px;
+    background-position-x: 35%;
+    background-position-y: 120px;
+  } 
+  
+  .outro h1
+  {
+    padding-top: 30%;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 60px;
   }
+
+  .outro a button{
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: 10%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .outro a button{
+    background: rgb(230, 131, 50);
+    color: #fff;
+    width: 305px;
+    height: 55px;
+    border: 1px solid rgb(158, 77, 11);
+    font-size: 23px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+  }
+  
+  .outro a button:focus{
+    outline: none
+  }
+}
+
+
+/* Tablets Style: Landscape */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: Landscape){
+
+  .logo{  
+    padding-top: 15%;
+    background-image: url("./intro/alm_logo.svg");
+    background-repeat: no-repeat;
+    margin-left: 42%; 
+    width: 150px;
+    height: 180px;
+  }
+
+  .intro{
+    background-image: url("./intro/intro.jpeg");
+    background-size: cover;
+    background-position-x: 28%;
+    background-position-y: -100px;
+    min-height: 700px;
+  }
+
+  .container h1{
+    font-size: 40px;
+  }
+
+  .container .p1{
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .container .p2
+  {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 16px;
+  }
+  
+  .container .p2 a button{
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: 15px; 
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .container .p2 a button{
+    background: rgb(230, 131, 50);
+    color: #fff;
+    width: 225px;
+    height: 45px;
+    border: 1px solid rgb(158, 77, 11);
+    font-size: 18px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .container .p2 a button:focus{
+    outline: none
+  }
+
+  .container .down_arrow{
+    margin-left: 8%;
+    margin-top: 40%;
+  }
+
+  .outro{
+    background-image: url("./intro/pexels-photo-1328998.jpeg");
+    background-size: cover;
+    background-position-x: 35%;
+    background-position-y: 10px;
+    min-height: 600px;
+  }
+
+  .outro .dark-overlay
+  {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    min-height: 600px;
+  }
+
+  .outro h1
+  {
+    padding-top: 25%;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 45px;
+  }
+
+  .outro a button{
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: 5%;
+    font-size: 25px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .outro a button{
+    background: rgb(230, 131, 50);
+    color: #fff;
+    width: 225px;
+    height: 55px;
+    border: 1px solid rgb(158, 77, 11);
+    font-size: 18px; 
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+  }
+  
+  .outro a button:focus{
+    outline: none
+  }
+}
+
+/* Larger Screen */
+@media screen and (min-width: 1200px)
+{
+   
+  .logo{  
+    padding-top: 10%;
+    background-image: url("./intro/alm_logo.svg");
+    background-repeat: no-repeat;
+    margin-left: 42%; 
+    width: 200px;
+    height: 180px;
+  }
+
+  .intro{
+    background-image: url("./intro/intro.jpeg");
+    background-size: cover;
+    background-position-x: 40%;
+    min-height: 700px;
+  }
+
+  .container{
+    margin-top: -25px;
+  }
+  
+  .outro{
+    background-image: url("./intro/pexels-photo-1328998.jpeg");
+    background-size: cover;
+    background-position-x: 45%;
+  }
+
+  .outro h1
+  {
+    padding-top: 20%;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 50px;
+  }
+
+  .outro .btn{
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: 5%;
+    font-size: 20px; 
+  }
+
 }
