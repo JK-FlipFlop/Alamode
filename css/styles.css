@@ -58,7 +58,7 @@ body
   color: #fff;
   width: 245px;
   height: 55px;
-  border: 1px solid rgb(230, 131, 50);
+  border: 3px solid rgb(230, 131, 50);
   font-size: 18px;
   border-radius: 4px;
   transition: .6s;
@@ -168,7 +168,7 @@ body
   color: #fff;
   width: 245px;
   height: 55px;
-  border: 1px solid rgb(230, 131, 50);
+  border: 3px solid rgb(230, 131, 50);
   font-size: 18px;
   transition: .6s;
   border-radius: 4px;
@@ -231,7 +231,7 @@ body
   width: 225px;
   height: 45px;
   border: 1px solid rgb(158, 77, 11);
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -624,7 +624,7 @@ body
     padding-top: 15%;
     background-image: url("../intro/alm_logo.svg");
     background-repeat: no-repeat;
-    margin-left: 42%; 
+    margin-left: 60%; 
     width: 150px;
     height: 180px;
   }
@@ -708,7 +708,6 @@ body
   .outro a button{
     font-family: 'Fredericka the Great', cursive;
     margin-top: 5%;
-    font-size: 25px; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -719,7 +718,7 @@ body
     background: rgb(230, 131, 50);
     color: #fff;
     width: 225px;
-    height: 55px;
+    height: 45px;
     border: 1px solid rgb(158, 77, 11);
     font-size: 18px; 
     border-radius: 4px;
@@ -740,7 +739,7 @@ body
     padding-top: 10%;
     background-image: url("../intro/alm_logo.svg");
     background-repeat: no-repeat;
-    margin-left: 42%; 
+    margin-left: 60%; 
     width: 200px;
     height: 180px;
   }
